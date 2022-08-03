@@ -1,6 +1,14 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    border: none;
+}
+
+.body{
+     /* background-image: url('/imgs/sea.jpeg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .container{
@@ -11,24 +19,45 @@
 
 .header-section{
     background-color: white;
-    height: 35px;
-}
-
-.header-row{
-    background-color: red;
-    height: 35px;
-    margin: auto;
+    height: 20px;
+    display: flex;
 }
 
 .header-section-items{
     display:flex;
-    justify-content: space-between;
+    font-size: 12px;
+    line-height: 19px;
+    color: #696969;
+    font-family: "Georgia";
+    position: relative;
 }
 
-.header-line{
-    width: 100%;
-    height: 2px;
-    background-color: #7c9c37;
+.header-section-item-two{
+    margin-left: 52px;
+}
+
+.search{
+    position: absolute; 
+    width:210px;
+    height: 25px;
+    right: 0px;
+}
+
+.search-bar{
+    border:none; 
+    background-color:#e1e1e1; 
+    display:block; 
+    width: 100%; 
+    box-sizing: border-box;
+    border-radius: 120px;
+}
+
+.search-logo{
+    position: absolute; 
+    top: 1px; 
+    right: 5px;
+    background-color: #222222;
+    border-radius: 50%;
 }
 
 
@@ -39,30 +68,156 @@
 .main-section-items{
     height: 93px;
     display: flex;
+    justify-content: space-between;
+
 }
 
+.main-section-logo{
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .main-section-header{
     font-size: 36px;
     line-height: 36px;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
 }
 
 .main-section-p{
     font-size: 12px;
     line-height: 12px;
     color: #ffffff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.main-section-nav{
+    margin-bottom: 22px;
+    
+
+}
+
+.main-section-ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu {
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    font-family: "Georgia";
+    text-align: center;
+    margin-top: 45px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.line{
+    width: 1px;
+    height: 32px;
+    background-color: #828282;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 38px;
+
+}
+
+.nav-subline-text{
+    font-size: 12px;
+    line-height: 19px;
+    color: #cccccc;
+    font-family: "Arial";
+}
+
+
+.home-button:link {
+    text-decoration: none;
+    color: #ffffff;
+
+  }
+
+.home-button:hover {
+    color: #7c9c37;
+    text-decoration: none;
+
+}
+
+.header-line{
+    width: 100%;
+    height: 2px;
+    background-color: #7c9c37;
+}
+
 
 .slider-section{
-    height: 376px;
+    height: 380px;
+    background-color: #333333;
+
+}
+
+.slider-section-items{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.aroow-left{
+    position: absolute;
+    LEFT: 0;
+    border-radius: 50%;
+}
+.right-img{
+    border-radius: 50%;
+}
+
+.arrow-right{
+    position: absolute;
+    right: 0;
 }
 
 
-.slider-section-img{
-    background-image: url(./images/4.png);
+
+
+
+
+@media screen and (max-width: 996px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .service {
+        justify-content: center;
+    }
+
+    .work-list {
+        justify-content: center;
+    }
+
+    .slider-arrow-left {
+        display: none;
+    }
+
+    .slider-arrow-right {
+        display: none;
+    }
+
+    .header-navigation {
+        display: none;
+    }
+
+    .slider-item {
+        flex-wrap: wrap;
+    }
+
+    .footer-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
-
-
